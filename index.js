@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-const generateMarkdown = require('/utils/generateMarkdown.js');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 
 // TODO: Create an array of questions for user input
@@ -65,17 +65,32 @@ const questions = [
         }
     }
     },
-    {
-    type: 'input',
-    name: 'credits',
-    message: 'list collaborators',
-    
-},
+   
 {
     type: 'list',
     name: 'license',
     message: 'What license would you like to use?',
-    choices: ['MIT', 'GNU']
+    choices: ['MIT', 'GNU'],
+    when: ({ confirmLicenses }) => {
+        if (confirmLicenses) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+},
+{
+    type: 'input',
+    name: 'credits',
+    message: 'list collaborators',
+    validate: credit => {
+        if (credit) {
+            return true;
+
+        } else {
+            return false;
+        }
+    }
 },
 
 ];
