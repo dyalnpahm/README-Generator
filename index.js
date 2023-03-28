@@ -71,13 +71,7 @@ const questions = [
     name: 'license',
     message: 'What license would you like to use?',
     choices: ['MIT', 'GNU'],
-    when: ({ confirmLicenses }) => {
-        if (confirmLicenses) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+    
 },
 {
     type: 'input',
