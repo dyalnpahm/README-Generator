@@ -1,28 +1,28 @@
-# undefined
+# readme
 
-  [![undefined license](https://img.shields.io/badge/License-undefined-blue.svg)](undefined)
+  
 
   ## Table of Contents
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Licenses](#licenses)
+  * [Licenses](#license)
   * [Questions](#questions)
   * [Credits](#credits)
   
   ## Description
-  to create a readme generator that creates professional readme efficiently
+  to create a readme
   ## Installation
-  open the terminal, enter npm i
+  install all dependencies by entering npm install
   ## Usage
-  to use the application open terminal and enter node index.js, then enter the answers to all prompts that appear
-  
+  to use application enter node index.js
+  ## Licenses This project is covered under the ${license} license. To learn more click the license button at the top.
   
   ## Questions
   Have questions about this project?  
   GitHub: https://github.com/undefined  
   Email: undefined
   ## Credits
-  undefined
+  dyalnpahm
 
 

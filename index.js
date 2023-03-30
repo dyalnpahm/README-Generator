@@ -7,9 +7,9 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 // TODO: Create an array of questions for user input
 const questions = [
     {
-        type: 'input',
+                type: 'input',
         name: 'projectTitle',
-        message: 'What is the project title',
+        message: 'What is the project title?',
         validate: projectTitles => {
             if (projectTitles){
                 return true; 
@@ -21,6 +21,34 @@ const questions = [
         }
 
 
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'What is your github user?',
+        validate: githubs => {
+            if (githubs) {
+                return true;
+
+            } else {
+                console.log ('Please enter a github username');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email?',
+        validate: emails => {
+            if (emails){
+                return true;
+
+            } else {
+                console.log ('Please enter your email');
+                return false;
+            }
+        }
     },
     {
         type: 'input',
@@ -54,7 +82,7 @@ const questions = [
     { 
     type: 'input',
     name: 'usage',
-    message: 'What are the instruction for usage',
+    message: 'What are the instruction for usage?',
     validate: usages => {
         if (usages) {
             return true;
