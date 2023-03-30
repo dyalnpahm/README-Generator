@@ -1,8 +1,8 @@
-
+const fs= require ('fs')
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license){
+  if (!license){
     return '';
   } else {
     return `[![${license} license](https://img.shields.io/badge/License-${license}-blue.svg)](${renderLicenseLink(license)})`
@@ -29,7 +29,8 @@ function renderLicenseSection(license) {
   if (!license){
     return '';
   } else {
-    return '## Licenses This project is covered under the ${license} license. To learn more click the license button at the top.'
+    return ` ## Licenses
+    This project is covered under the ${license} license. To learn more click the license button at the top.`
 
   }
   }
