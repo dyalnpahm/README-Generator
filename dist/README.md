@@ -1,4 +1,4 @@
-# readme generator
+# readme-generator
 
   [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://mit-license.org/)
 
@@ -6,17 +6,17 @@
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Licenses](#license)
+  * [Licenses](#licenses)
   * [Questions](#questions)
   * [Credits](#credits)
   
   ## Description
-  this is a readme generator that creates professional readmes on an application
+  this is a readme generator which creates professional readme's detailing the instructions and aspects of an application
   ## Installation
-  enter npm i into the terminal
+  type npm i into the terminal ton install the dependencies needed for the project
   ## Usage
-  enter node index.js to start the application, thjen answer the following questions
-   ## Licenses 
+  type node index.js to start the program
+   ## Licenses
     This project is covered under the MIT license. To learn more click the license button at the top.
   
   ## Questions
@@ -24,6 +24,6 @@
   GitHub: https://github.com/dyalnpahm  
   Email: dyalnpahm@gmail.com
   ## Credits
-  dyalnpahm
+  dylanpham
 
 
